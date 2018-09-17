@@ -16,11 +16,15 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
  
 **b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have?**
 
-10 bits  (2^10 is 1024)
+![ a relative link][RGB color spectrum](./part_b.MOV)
+
+10 bits  (2^10 is 1024). seems like all are being used
 
 ## Part B. RGB LED
 
 **How might you use this with only the parts in your kit? Show us your solution.**
+
+By using the Ohm resistors we have in our kit. One for each the blue and green, and two in a row for the red. 
 
 ## Part C. Voltage Varying Sensors 
  
@@ -28,9 +32,18 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 
 **a. What voltage values do you see from your force sensor?**
 
-0-5v
+0-1023 (5v)
 
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
+
+FSR- seems to be logorithmic. you push lightly and voltage goes up quickly, but you can squeeze really hard
+and the voltage levels off. 
+
+Flex Sensor-Linear. as i tilt it with the same consistent force it goes up and down evenly. 
+
+Photo cell-Linear
+
+Softpot-Logorithmic. Very durastic ups and downs.
 
 
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
