@@ -16,7 +16,7 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
  
 **b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have?**
 
-![ a relative link][RGB color spectrum](./part_b.MOV)
+[RGB color spectrum](./part_b.MOV)
 
 10 bits  (2^10 is 1024). seems like all are being used
 
