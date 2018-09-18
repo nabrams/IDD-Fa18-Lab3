@@ -259,7 +259,7 @@ and then read them all in a row. Using the put() function gives the address, so 
 the addresses you used to output the data all together. You could also use the put() function to put 4 bytes 
 for a float, and 2 bytes for an int, so that you have the space laid out. 
 
-**Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.**ff
+**Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.**
 
 ### 2. Design your logger
  
