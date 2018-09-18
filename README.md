@@ -229,9 +229,20 @@ For the accelerometer, if you shake it really fast the x values go negative and 
 
 **a. Does it matter what actions are assigned to which state? Why?**
 
+Yes it does. If you print the values then set them, then clear them, 
+you will never be able to see the output you want because it gets cleared
+before being able to read it.
+
+
 **b. Why is the code here all in the setup() functions and not in the loop() functions?**
 
+The code is all in the setup() function because everytime you switch states, you want to re-setup
+what needs to happen. If you were to put it in loop, when you switch states, it would happen
+continously instead of when you just enter the state. 
+
 **c. How many byte-sized data samples can you store on the Atmega328?**
+
+1024 byte-sized data samples
 
 **d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?**
 
