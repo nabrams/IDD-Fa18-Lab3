@@ -91,12 +91,20 @@ FSR-
 
 Flex Sensor-
 
-Photo Cell-
+Photo Cell- 22k Ohm
 
 Softpot-
 
 
 **e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
+
+FSR- Logorithmic
+
+Flex Sensor- Logorithmic 
+
+Photo Cell- Linear
+
+Softpot- Linear
 
 ### 2. Accelerometer
 
