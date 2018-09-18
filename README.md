@@ -112,6 +112,8 @@ Softpot- Linear
  
 **a. Include your accelerometer read-out code in your write-up.**
 
+[Watch it change!](./IMG_1050.TRIM.MOV)
+
 ```
 // Basic demo for accelerometer readings from Adafruit LIS3DH
 
