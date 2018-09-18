@@ -48,8 +48,55 @@ Softpot-Logorithmic. Very durastic ups and downs.
 
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
 
+Yes
+
+```
+int fsrAnalogPin = 0; // FSR is connected to analog 0
+int redLEDpin = 8;      // connect Red LED to pin 11 (PWM pin)
+int blueLEDpin = 10;      // connect Red LED to pin 11 (PWM pin)
+int greenLEDpin = 9;      // connect Red LED to pin 11 (PWM pin)
+int fsrReading;      // the analog reading from the FSR resistor divider
+int redLEDbrightness;
+int greenLEDbrightness;
+int blueLEDbrightness;
+ 
+void setup(void) {
+  Serial.begin(9600);   // We'll send debugging information via the Serial monitor
+  pinMode(redLEDpin, OUTPUT);
+  pinMode(greenLEDpin, OUTPUT);
+  pinMode(blueLEDpin, OUTPUT);
+}
+ 
+void loop(void) {
+  fsrReading = analogRead(fsrAnalogPin);
+  Serial.print("Analog reading = ");
+  Serial.println(fsrReading);
+ 
+  // we'll need to change the range from the analog reading (0-1023) down to the range
+  // used by analogWrite (0-255) with map!
+  redLEDbrightness = map(100,0, 990, 0, fsrReading%100);
+  greenLEDbrightness = map(100, 0, 990, fsrReading%100, 255);
+  blueLEDbrightness = map(100,fsrReading%100, 990, 0, 255);
+  // LED gets brighter the harder you press
+  analogWrite(redLEDpin, redLEDbrightness);
+  analogWrite(greenLEDpin, greenLEDbrightness);
+  analogWrite(blueLEDpin, blueLEDbrightness);
+  delay(100);
+}
+
+```
+
+
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
+
+FSR-
+
+Flex Sensor-
+
+Photo Cell-
+
+Softpot-
 
 
 **e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
