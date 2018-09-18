@@ -102,6 +102,8 @@ Softpot-
 **e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
 
 ### 2. Accelerometer
+
+[Accelerometer movement](./accelerometer.mov)
  
 **a. Include your accelerometer read-out code in your write-up.**
 
