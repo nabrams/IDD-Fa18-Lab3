@@ -22,7 +22,6 @@
 
 By using the Ohm resistors we have in our kit. One for each the blue and green and red. 
 
-[All the colors](./color_spectrum.MOV)
 
 ## Part C. Voltage Varying Sensors 
  
