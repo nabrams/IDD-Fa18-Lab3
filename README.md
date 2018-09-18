@@ -210,6 +210,10 @@ void loop() {
 
 ![a relative link](./graph.png)
 
+For the proximity sensor, as you put your hand closer and closer to it, the numbers go up a lot. 
+
+For the accelerometer, if you shake it really fast the x values go negative and the y values go postive. when you slowly tilt it back and forth as the X values go down, the Y values go up, and vice versa
+
 
 **b. Upload your merged code to your lab report repository and link to it here.**
 
