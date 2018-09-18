@@ -208,7 +208,12 @@ void loop() {
 
 **a. Describe the voltage change over the sensing range of the sensor. A sketch of voltage vs. distance would work also. Does it match up with what you expect from the datasheet?**
 
+![a relative link](./graph.png)
+
+
 **b. Upload your merged code to your lab report repository and link to it here.**
+
+[Merged code!](./my_merged_code.ino)
 
 ## Optional. Graphic Display
 
