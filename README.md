@@ -22,9 +22,11 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 
 ## Part B. RGB LED
 
+![a relative link](./RGB_setup.JPG)
+
 **How might you use this with only the parts in your kit? Show us your solution.**
 
-By using the Ohm resistors we have in our kit. One for each the blue and green, and two in a row for the red. 
+By using the Ohm resistors we have in our kit. One for each the blue and green and red. 
 
 ## Part C. Voltage Varying Sensors 
  
