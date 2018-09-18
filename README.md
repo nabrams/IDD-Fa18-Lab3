@@ -261,6 +261,8 @@ for a float, and 2 bytes for an int, so that you have the space laid out.
 
 **Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.**
 
+combine the switch state EEPROM and the merged sensor code
+
 ### 2. Design your logger
  
 **a. Insert here a copy of your final state diagram.**
