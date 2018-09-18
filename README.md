@@ -246,9 +246,20 @@ continously instead of when you just enter the state.
 
 **d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?**
 
+devide 1024 by 4, to get 256, that will make it one bite for the Arduino analog pins.
+
+float is 4 bytes. To get analog data from the I2C devices to be byte-sized, use the map function!
+
+
+
 **e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
 
-**Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.**
+We could store the the data if it were bigger than a byte by writing parts (each byte) on to specific entries
+and then read them all in a row. Using the put() function gives the address, so you could make a list of all 
+the addresses you used to output the data all together. You could also use the put() function to put 4 bytes 
+for a float, and 2 bytes for an int, so that you have the space laid out. 
+
+**Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.**ff
 
 ### 2. Design your logger
  
